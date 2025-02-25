@@ -1,6 +1,7 @@
 # Aula 02 (25/02) 
 
-<img style="float: right;" src="https://cdn.worldvectorlogo.com/logos/nodejs.svg" width="100px;"/>
+<img align="right" src="https://cdn.worldvectorlogo.com/logos/nodejs.svg" width="100px;"/>
+
 
 ## NodeJS
 
