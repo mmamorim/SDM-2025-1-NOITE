@@ -5,4 +5,5 @@
 * **[Aula 01](./Aula01_18Fev/)** (18/02) - Apresentação da UC / Javascript
 * **[Aula 02](./Aula02_25Fev/)** (25/02) 
   - Conhecendo o NodeJS / npm 
-  - Super-Heróis e Vilões 
+  - JSON
+  - Modularização (import/export) 

@@ -8,6 +8,10 @@
 
 ([download/instalação](https://nodejs.org/pt))
 
+
+<img align="right" src="https://e7.pngegg.com/pngimages/828/432/png-clipart-npm-node-js-computer-icons-computer-software-installation-others-text-rectangle.png" width="70px;"/>
+
+
 ## npm
 
 O **NPM** é um gerenciador de pacotes utilizado para administrar as bibliotecas e frameworks utilizados em uma aplicação NodeJS. 
@@ -49,6 +53,8 @@ Um exemplo do que um arquivo ```package.json```
 }
 ~~~
 
+<img align="right" src="https://www.pngfind.com/pngs/m/236-2367416_free-download-at-icons8-json-transparent-background-logo.png" width="50px;"/>
+
 ## O que é um arquivo JSON?
 
 Um arquivo **JSON** é um arquivo de texto que armazena dados estruturados em pares de chave e valor e é um formato aberto que é usado para trocar dados entre sistemas. **JSON** é a sigla para **JavaScript Object Notation**. 
@@ -62,4 +68,44 @@ Além da terminação ```.json``` em todos os arquivos que utilizam esse formato
 * **dois pontos** ```:``` para separar a chave e seu valor correspondente;
 * **vírgula** ```,``` para indicar a separação entre os elementos.
 
+## Modularização (import/export)
 
+Existem duas formas: 
+* CJS (Common JavaScript) ou
+* ESM (EcmaScript Modules)
+
+Para esta aula vamos apenas mostrar o uso do **ESM (EcmaScript Modules)**
+
+[referência Mozilla](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Modules) 
+
+### Exportando recursos do módulo
+
+Isso é feito usando a declaração ```export```
+
+A maneira mais fácil de usá-lo é colocá-lo na frente de qualquer item que você queira exportar para fora do módulo, por exemplo:
+
+~~~js
+export const name = "john";
+
+export function draw() {
+    ...
+}
+~~~
+
+Uma maneira mais conveniente de exportar todos os itens que você deseja exportar é usar uma única instrução de exportação no final do arquivo do módulo, seguida por uma lista separada por vírgula dos recursos que você deseja exportar envoltos em chaves. Por exemplo:
+
+~~~js
+export { name, draw }
+~~~
+
+### Importando recursos para o seu script
+
+Depois de exportar alguns recursos do seu módulo, é necessário importá-los para o script para poder usá-los. A maneira mais simples de fazer isso é a seguinte:
+
+~~~js
+import { name, draw } from "./arquivo.js";
+~~~
+
+### Vamos brincar um pouco...
+
+Utilizaremos alguns trechos de código de ajuda que podem ser encontrados na pasta [trechos](./trechos/)
