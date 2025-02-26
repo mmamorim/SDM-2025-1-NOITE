@@ -5,13 +5,21 @@
 //}
 
 // STRINGS
-let nome = "Maria"
-let idade = 25
-let texto1 = "oi '"+nome+"' você tem "+idade+" anos"
-let texto2 = 'oi "'+nome+'" você tem '+idade+' anos'
-let texto3 = `oi ${nome} você tem ${idade} anos`
+//let nome = "Maria"
+//let idade = 25
+//let texto1 = "oi '"+nome+"' você tem "+idade+" anos"
+//let texto2 = 'oi "'+nome+'" você tem '+idade+' anos'
+//let texto3 = `oi ${nome} você tem ${idade} anos`
+//
+//console.log(texto1);
+//console.log(texto2);
+//console.log(texto3);
+//
+//console.log(texto3.toLowerCase());
 
-console.log(texto1);
-console.log(texto2);
-console.log(texto3);
-
+// VETORES (ARRAYS)
+let vet = [23,"oi",54, false]
+vet.push(67)
+console.log(vet);
+vet.pop()
+console.log(vet);
