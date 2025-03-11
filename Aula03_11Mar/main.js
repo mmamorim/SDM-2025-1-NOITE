@@ -1,7 +1,9 @@
 import { areaCirculo, PI } from "./circulos.js"
 import readlineSync from "readline-sync"
+import chalk from "chalk";
 
 console.log("oi gente")
+console.log(chalk.blue('Hello world!'));
 
 let raio = readlineSync.question('Digite o valor do raio? ');
 raio = parseInt(raio)
