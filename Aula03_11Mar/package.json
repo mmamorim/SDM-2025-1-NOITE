@@ -1,0 +1,16 @@
+{
+  "name": "aula03_11mar",
+  "version": "1.0.0",
+  "description": "Uma aula teste",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Marcelo",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
