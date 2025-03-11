@@ -10,7 +10,7 @@
 * **[Aula 01](./Aula01_18Fev/)** (18/02) - Apresentação da UC / Javascript
 * **[Aula 02](./Aula02_25Fev/)** (25/02)  - Introdução ao Javascript
 * **CARNAVAL** (04/03) 
-* **[Aula 03](./Aula02_25Fev/)** (25/02) 
+* **[Aula 03](./Aula03_11Mar/)** (11/03) 
   - Conhecendo o NodeJS / npm 
   - package.json 
   - Modularização (import/export) 
