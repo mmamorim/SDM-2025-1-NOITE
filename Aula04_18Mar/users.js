@@ -1,6 +1,6 @@
 
 export function newUser(firstName,lastName,username,password,rg,email) {
-    let user = {
+    return {
         firstName,
         lastName,
         username,
@@ -8,5 +8,4 @@ export function newUser(firstName,lastName,username,password,rg,email) {
         rg,
         email    
     }
-    return user
 }
