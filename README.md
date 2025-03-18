@@ -14,3 +14,7 @@
   - Conhecendo o NodeJS / npm 
   - package.json 
   - Modularização (import/export) 
+* **[Aula 04](./Aula04_18Mar/)** (18/03) 
+  - Objetos
+  - Funções
+* Aula05 (25/03) Tech Week IX [link](https://animatechweek.com.br/)
