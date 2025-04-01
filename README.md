@@ -18,3 +18,6 @@
   - Objetos
   - Funções
 * Aula05 (25/03) Tech Week IX [link](https://animatechweek.com.br/)
+* **[Aula 06](./Aula06_01Abr//)** (01/04) 
+  - HTTP
+  - API's
