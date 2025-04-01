@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06</title>
+</head>
+
+<body>
+
+    <h1>Aula 06</h1>
+
+    <script>
+        let url = "https://geek-jokes.sameerkumar.website/api?format=json"
+        //let url = "https://sfsfdsfsdfsdfsdf.com"
+        //let req = fetch(url, {
+        //    method: "GET"
+        //}).then((resp) => {
+        //    resp.json().then((obj) => {
+        //        console.log("Deu certo", obj);
+        //    }).catch(() => {})
+        //}).catch(() => {
+        //    console.log("Deu erro");
+        //})
+
+        async function fazChamada() {
+            let req = await fetch(url, {
+                method: "GET"
+            })
+            let obj = await req.json()
+            console.log("obj",obj)
+        }
+
+        fazChamada()
+        console.log("passei aqui");
+        
+    </script>
+
+</body>
+
+</html>
