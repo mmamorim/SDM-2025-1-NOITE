@@ -66,8 +66,8 @@ Em nosso projeto, criar um arquivo JS chamado ```server.js``` com a seguinte est
 const express = require('express');
 const api = express();
 
-api.get('/', (_req, res) => {
- res.status(200).send('Oi Gente');
+api.get('/', (req, res) => {
+ res.send('Oi Gente');
 });
 
 api.listen(3001, () => {
