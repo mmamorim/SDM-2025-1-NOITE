@@ -63,7 +63,7 @@ npm i express
 Em nosso projeto, criar um arquivo JS chamado ```server.js``` com a seguinte estrutura para criar uma API simples.
 
 ~~~js
-const express = require('express');
+import express from 'express';
 const api = express();
 
 api.get('/', (req, res) => {
