@@ -5,6 +5,10 @@ api.get('/', (req, res) => {
  res.send('Oi Gente');
 });
 
-api.listen(3001, () => {
+api.get('/algo', (req, res) => {
+    res.send('Oi Gente');
+   });
+   
+api.listen(3000, () => {
  console.log('Server escutando na porta 3001');
 });

@@ -21,3 +21,6 @@
 * **[Aula 06](./Aula06_01Abr//)** (01/04) 
   - HTTP
   - API's
+* **[Aula 07](./Aula07_08Abr//)** (08/04) 
+  - Criando servidor (API) com o Express
+  - Testando a API com EchoAPI
