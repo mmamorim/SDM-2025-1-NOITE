@@ -1,0 +1,21 @@
+{
+    "users": {
+        "ana": {
+            "id": "ana",
+            "nome": "Ana Alface",
+            "email": "ana@ana.com"
+        },
+        "bia": {
+            "id": "bia",
+            "nome": "Bia Agrião",
+            "email": "bia@bia.com"
+        }
+    },
+    "produtos": {
+        "chocolate": {
+            "id": "chocolate",
+            "nome": "Chocolate em lata",
+            "gosta": "ana"
+        }
+    }
+}

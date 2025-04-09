@@ -18,12 +18,14 @@ server.get('/', (req, res) => {
     res.send('🙋‍♂️ Oi gente');
 });
 
-server.get('/users/5435/idade', (req, res) => {
-    res.send('acessou a rota /users/5435/idade');
+server.get('/users', (req, res) => {
+    console.log("sgdb.db.users",sgdb.db.users);    
+    res.json(sgdb.db.users);
 });
 
-server.get('/users', (req, res) => {
-    res.send('acessou a rota /users');
+server.get('/users/:id', (req, res) => {
+    console.log("req.params",req.params);    
+    res.json(sgdb.db.users[req.params.id]);
 });
 
 server.listen(PORT, () => {
