@@ -1,13 +1,18 @@
 import express from 'express';
 import bodyParser from 'body-parser'
+import sgdb from "./sgdb.js"
 
 const PORT = 3001
+
+await sgdb.init()
+console.log("sgdb.db",sgdb.db);
 
 const server = express();
 server.use( bodyParser.json() );       // suporte para JSON-encoded bodies
 server.use(bodyParser.urlencoded({     // suporte para URL-encoded bodies
   extended: true
 }));
+
 
 server.get('/', (req, res) => {
     res.send('🙋‍♂️ Oi gente');

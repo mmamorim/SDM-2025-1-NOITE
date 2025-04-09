@@ -1,14 +1,6 @@
-import { join, dirname } from 'path'
-import { Low, JSONFile } from 'lowdb'
-import { fileURLToPath } from 'url'
+import { JSONFilePreset } from 'lowdb/node'
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-
-// Use JSON file for storage
-const file = join(__dirname, './db.json')
-
-const adapter = new JSONFile(file)
-const db = new Low(adapter)
+const db = await JSONFilePreset('db.json', {})
 
 const sgdb = {
     db: db.data,
