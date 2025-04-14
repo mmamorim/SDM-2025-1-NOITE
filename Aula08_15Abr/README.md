@@ -8,7 +8,7 @@ Os super-heróis são personagens fictícios dotados de poderes sobre-humanos. C
 Em quase todas as histórias inventadas, o super-herói é chamado para resolver um problema ou enfrentar ameaças de um vilão com um plano maligno. O vilão também é munido de superpoderes mas dificilmente consegue vencer o super-herói, pois os poderes deste são mais fortes.
 Na lista abaixo são citados alguns super-heróis e alguns vilões, dos quais indubitavelmente já ouvimos falar. A lista apresenta também o nome na vida real e os superpoderes de cada um. Os superpoderes foram categorizados de 1 a 5, sendo 5 o poder mais forte e 1 o poder mais fraco.
 
-<img align="left" src="./superherois.png" />
+<img src="./superherois.png" />
 
 
 # Atividade de Estudo
