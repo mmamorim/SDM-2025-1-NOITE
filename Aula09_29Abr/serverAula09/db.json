@@ -1,0 +1,14 @@
+{
+  "frutas": {
+    "pera": {
+      "id": "pera",
+      "nome": "Pera",
+      "cor": "amarela"
+    },
+    "uva": {
+      "id": "uva",
+      "nome": "Uva",
+      "cor": "roxa"
+    }
+  }
+}
