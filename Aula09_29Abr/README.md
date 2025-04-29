@@ -50,3 +50,5 @@ node server.js
 ~~~
 
 # Teste da API
+
+Usar extensão: **Thunder Client**
