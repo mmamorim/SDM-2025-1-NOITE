@@ -9,6 +9,29 @@
       "id": "uva",
       "nome": "Uva",
       "cor": "roxa"
+    },
+    "morango": {
+      "id": "morango",
+      "nome": "Morango",
+      "cor": "vermelha"
+    }
+  },
+  "herois": {
+    "superman": {
+      "id": "superman",
+      "nome": "Superman",
+      "nomeReal": "Clark Kent",
+      "frutaPreferidas": ["uva","morango"]
+    },
+    "heman": {
+      "id": "heman",
+      "nome": "He-man",
+      "nomeReal": "Principe Adam"
+    },
+    "aranha": {
+      "id": "aranha",
+      "nome": "Homem Aranha",
+      "nomeReal": "Peter Park"
     }
   }
 }
