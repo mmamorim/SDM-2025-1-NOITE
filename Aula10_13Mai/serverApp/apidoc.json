@@ -1,0 +1,33 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Um título de API",
+    "description": "Descrição da API"
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "paths": {
+    "/frutas": {
+      "get": {
+        "tags": [
+          "FRUTAS"
+        ],
+        "summary": "Retorna frutas",
+        "description": "Retorna todas as frutas existentes",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "frutas response"
+          }
+        }
+      }
+    }
+  }
+}
