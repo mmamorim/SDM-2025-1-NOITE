@@ -28,3 +28,6 @@
   - [Atividade](./Aula08_15Abr)
 * **[Aula 09](./Aula09_29Abr/)** (29/04)  
   - Criando servidor (API) com o Express
+* **AVALIAÇÃO A1** (06/05) 
+* **[Aula 10](./Aula10_13Mai/)** (13/05)  
+  - Criando uma API CRUD completa
