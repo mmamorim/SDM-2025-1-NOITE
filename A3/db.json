@@ -1,0 +1,39 @@
+{
+  "frutas": {
+    "uva": {
+      "id": "uva",
+      "nome": "Uva",
+      "cor": "roxa"
+    },
+    "morango": {
+      "id": "morango",
+      "nome": "Morango",
+      "cor": "roxa"
+    },
+    "banana": {
+      "id": "banana",
+      "nome": "Banana",
+      "cor": "Amarela"
+    }
+  },
+  "filmes": {
+    "rambo": {
+      "id": "rambo",
+      "nome": "Rambo I",
+      "ano": 1982,
+      "duracao": 120
+    },
+    "titanic": {
+      "id": "titanic",
+      "nome": "Titanic",
+      "ano": 1999,
+      "duracao": 160
+    },
+    "frozen": {
+      "id": "frozen",
+      "nome": "Frozen xxx",
+      "ano": 2022,
+      "duracao": 110
+    }
+  }
+}

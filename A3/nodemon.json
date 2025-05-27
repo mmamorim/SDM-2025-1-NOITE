@@ -1,0 +1,5 @@
+{
+    "ignore": [
+        "db.json", "apidoc.json"
+    ]
+}

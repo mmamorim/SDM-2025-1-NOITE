@@ -1,0 +1,27 @@
+{
+  "name": "sdm-server-template",
+  "version": "1.0.0",
+  "description": "> prof. Marcelo Amorim",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmamorim/SDM-server-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmamorim/SDM-server-template/issues"
+  },
+  "homepage": "https://github.com/mmamorim/SDM-server-template#readme",
+  "dependencies": {
+    "@mmamorim/clapback": "^2.0.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}

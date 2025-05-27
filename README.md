@@ -6,6 +6,8 @@
 * [W3Schols](https://www.w3schools.com/js/default.asp) 
 * [Mozilla](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
+## Projeto A3 [Enunciado/Exemplo](./A3)
+
 ### Aulas 
 * **[Aula 01](./Aula01_18Fev/)** (18/02) - Apresentação da UC / Javascript
 * **[Aula 02](./Aula02_25Fev/)** (25/02)  - Introdução ao Javascript
