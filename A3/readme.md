@@ -23,9 +23,10 @@ Este repositório contém o projeto de servidor utilizado durante as aulas de Si
 + @mmamorim/clapback
 
 
+Fazer o download desta pasta...
+Abrir pasta no VSCode...
+
 ~~~bash
-git clone https://github.com/mmamorim/SDM-server-template.git
-cd SDM-server-template
 npm install
 node server.js
 ~~~
