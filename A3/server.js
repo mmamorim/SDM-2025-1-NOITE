@@ -1,13 +1,16 @@
 import { server, clapback, PORT } from "./initServer.js"
+import rotasFrutas from "./rotasFrutas.js"
 
 server.get('/', (req, res) => {
     res.send('🙋‍♂️ Hello...route /');
 });
 
-server.get('/frutas', (req, res) => {
-    let frutas = clapback.get("/frutas")
-    res.json(frutas)
-});
+//server.get('/frutas', (req, res) => {
+//    let frutas = clapback.get("/frutas")
+//    res.json(frutas)
+//});
+
+rotasFrutas(server,clapback)
 
 server.get('/filmes', (req, res) => {
     let filmes = clapback.get("/filmes")

@@ -24,10 +24,280 @@
         ],
         "responses": {
           "200": {
-            "description": "frutas response"
+            "description": "Operação bem sucedida"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "FRUTAS"
+        ],
+        "summary": "Adiciona fruta",
+        "description": "Adiciona uma fruta a lista de frutas",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "fruta",
+            "description": "Objeto que descreve uma fruta",
+            "schema": {
+              "type": "object",
+              "required": [
+                "nome", "cor"
+              ],
+              "properties": {
+                "nome": { "type": "string", "example": "Banana" },
+                "cor": { "type": "string", "example": "vermelho" }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Operação Inserção bem sucedida"
           }
         }
       }
+    },
+    "/frutas/{id}": {
+      "put": {
+        "tags": [
+          "FRUTAS"
+        ],
+        "summary": "Altera fruta",
+        "description": "Altera uma fruta na lista de frutas",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "type": "string",
+            "description": "ID da fruta a ser alterada",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "fruta",
+            "description": "Objeto que descreve uma fruta",
+            "schema": {
+              "type": "object",
+              "required": [
+                "nome", "cor"
+              ],
+              "properties": {
+                "nome": { "type": "string", "example": "Banana" },
+                "cor": { "type": "string", "example": "vermelho" }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Operação Inserção bem sucedida"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "FRUTAS"
+        ],
+        "summary": "Remove fruta",
+        "description": "Remove uma fruta na lista de frutas",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "type": "string",
+            "description": "ID da fruta a ser removida",
+            "required": true
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Operação Remoção bem sucedida"
+          },
+          "400": {
+            "description": "FRUTA NÃO ENCONTRADA"
+          }
+        }
+      }      
+    },
+    "/usuarios": {
+      "get": {
+        "tags": [
+          "USUARIOS"
+        ],
+        "summary": "Retorna usuarios",
+        "description": "Retorna todos os usuarios existentes",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Operação bem sucedida"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "USUARIOS"
+        ],
+        "summary": "Adiciona usuário",
+        "description": "Adiciona um usuário na lista de usuários",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "usuario",
+            "description": "Objeto que descreve um usuário",
+            "schema": {
+              "type": "object",
+              "required": [
+                "nome", "login", "senha", "email"
+              ],
+              "properties": {
+                "nome": { "type": "string", "example": "Ana" },
+                "login": { "type": "string", "example": "ana" },
+                "senha": { "type": "string", "example": "12345" },
+                "email": { "type": "string", "example": "ana@ana.com" }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Operação Inserção bem sucedida"
+          }
+        }
+      }
+    },
+    "/tasks": {
+      "get": {
+        "tags": [
+          "TASKS"
+        ],
+        "summary": "Retorna frutas",
+        "description": "Retorna todas as frutas existentes",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Operação bem sucedida"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TASKS"
+        ],
+        "summary": "Adiciona fruta",
+        "description": "Adiciona uma fruta a lista de frutas",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "fruta",
+            "description": "Objeto que descreve uma fruta",
+            "schema": {
+              "type": "object",
+              "required": [
+                "nome", "cor"
+              ],
+              "properties": {
+                "nome": { "type": "string", "example": "Banana" },
+                "data": { "type": "string", "example": "01/01/2000" },
+                "done": { "type": "boolean", "example": true }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Operação Inserção bem sucedida"
+          }
+        }
+      }
+    },
+    "/tasks/{id}": {
+      "put": {
+        "tags": [
+          "TASKS"
+        ],
+        "summary": "Altera fruta",
+        "description": "Altera uma fruta na lista de frutas",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "type": "string",
+            "description": "ID da fruta a ser alterada",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "fruta",
+            "description": "Objeto que descreve uma fruta",
+            "schema": {
+              "type": "object",
+              "required": [
+                "nome", "data", "done"
+              ],
+              "properties": {
+                "nome": { "type": "string", "example": "Banana" },
+                "data": { "type": "string", "example": "01/01/2000" },
+                "done": { "type": "boolean", "example": true }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Operação Alteração bem sucedida"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TASKS"
+        ],
+        "summary": "Remove fruta",
+        "description": "Remove uma fruta na lista de frutas",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "type": "string",
+            "description": "ID da fruta a ser removida",
+            "required": true
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Operação Remoção bem sucedida"
+          },
+          "400": {
+            "description": "FRUTA NÃO ENCONTRADA"
+          }
+        }
+      }      
     }
   }
 }

@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/mmamorim/SDM-server-template#readme",
   "dependencies": {
-    "@mmamorim/clapback": "^2.0.0",
+    "@mmamorim/clapback": "^2.1.0",
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
     "express": "^5.1.0"
