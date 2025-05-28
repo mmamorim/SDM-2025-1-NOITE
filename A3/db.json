@@ -34,6 +34,20 @@
       "nome": "Frozen xxx",
       "ano": 2022,
       "duracao": 110
+    },
+    "FILME-_aVZ-": {
+      "id": "FILME-_aVZ-",
+      "nome": "Banana",
+      "ano": 2000,
+      "duracao": 120
+    }
+  },
+  "tasks": {
+    "TASK-W3oIG": {
+      "id": "TASK-W3oIG",
+      "nome": "Algo para fazer",
+      "data": "01/01/2000",
+      "done": true
     }
   }
 }

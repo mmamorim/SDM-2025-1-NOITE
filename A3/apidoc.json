@@ -129,6 +129,126 @@
         }
       }      
     },
+    "/filmes": {
+      "get": {
+        "tags": [
+          "FILMES"
+        ],
+        "summary": "Retorna frutas",
+        "description": "Retorna todas as frutas existentes",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Operação bem sucedida"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "FILMES"
+        ],
+        "summary": "Adiciona fruta",
+        "description": "Adiciona uma fruta a lista de frutas",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "fruta",
+            "description": "Objeto que descreve uma fruta",
+            "schema": {
+              "type": "object",
+              "required": [
+                "nome", "ano", "duracao"
+              ],
+              "properties": {
+                "nome": { "type": "string", "example": "Banana" },
+                "ano": { "type": "number", "example": 2000 },
+                "duracao": { "type": "number", "example": 120 }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Operação Inserção bem sucedida"
+          }
+        }
+      }
+    },
+    "/filmes/{id}": {
+      "put": {
+        "tags": [
+          "FILMES"
+        ],
+        "summary": "Altera fruta",
+        "description": "Altera uma fruta na lista de frutas",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "type": "string",
+            "description": "ID da fruta a ser alterada",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "fruta",
+            "description": "Objeto que descreve uma fruta",
+            "schema": {
+              "type": "object",
+              "required": [
+                "nome", "cor"
+              ],
+              "properties": {
+                "nome": { "type": "string", "example": "Banana" },
+                "cor": { "type": "string", "example": "vermelho" }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Operação Inserção bem sucedida"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "FILMES"
+        ],
+        "summary": "Remove fruta",
+        "description": "Remove uma fruta na lista de frutas",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "type": "string",
+            "description": "ID da fruta a ser removida",
+            "required": true
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Operação Remoção bem sucedida"
+          },
+          "400": {
+            "description": "FRUTA NÃO ENCONTRADA"
+          }
+        }
+      }      
+    },
+
+
     "/usuarios": {
       "get": {
         "tags": [
