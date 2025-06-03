@@ -2,11 +2,13 @@ import { server, db, PORT } from "./initServer.js"
 import rotasFilmes from "./rotasFilmes.js";
 import rotasFrutas from "./rotasFrutas.js"
 import rotasTarefas from "./rotasTarefas.js"
+import rotasUsuarios from "./rotasUsuarios.js";
 
 server.get('/', (req, res) => {
     res.send('🙋‍♂️ Hello...route /');
 });
 
+rotasUsuarios(server,db)
 rotasFrutas(server,db)
 rotasTarefas(server,db)
 rotasFilmes(server,db)

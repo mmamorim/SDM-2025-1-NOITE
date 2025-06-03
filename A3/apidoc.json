@@ -23,6 +23,57 @@
   },
   "Bearer": [],
   "paths": {
+    "/usuarios": {
+      "get": {
+        "tags": [
+          "USUARIOS"
+        ],
+        "summary": "Retorna usuarios",
+        "description": "Retorna todos os usuarios existentes",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Operação bem sucedida"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "USUARIOS"
+        ],
+        "summary": "Adiciona usuário",
+        "description": "Adiciona um usuário na lista de usuários",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "usuario",
+            "description": "Objeto que descreve um usuário",
+            "schema": {
+              "type": "object",
+              "required": [
+                "nome", "login", "senha", "email"
+              ],
+              "properties": {
+                "nome": { "type": "string", "example": "Ana" },
+                "login": { "type": "string", "example": "ana" },
+                "senha": { "type": "string", "example": "12345" },
+                "email": { "type": "string", "example": "ana@ana.com" }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Operação Inserção bem sucedida"
+          }
+        }
+      }
+    },
     "/frutas": {
       "get": {
         "tags": [
@@ -286,72 +337,6 @@
           },
           "400": {
             "description": "FRUTA NÃO ENCONTRADA"
-          }
-        }
-      }
-    },
-    "/usuarios": {
-      "get": {
-        "tags": [
-          "USUARIOS"
-        ],
-        "summary": "Retorna usuarios",
-        "description": "Retorna todos os usuarios existentes",
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "Operação bem sucedida"
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "USUARIOS"
-        ],
-        "summary": "Adiciona usuário",
-        "description": "Adiciona um usuário na lista de usuários",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "usuario",
-            "description": "Objeto que descreve um usuário",
-            "schema": {
-              "type": "object",
-              "required": [
-                "nome",
-                "login",
-                "senha",
-                "email"
-              ],
-              "properties": {
-                "nome": {
-                  "type": "string",
-                  "example": "Ana"
-                },
-                "login": {
-                  "type": "string",
-                  "example": "ana"
-                },
-                "senha": {
-                  "type": "string",
-                  "example": "12345"
-                },
-                "email": {
-                  "type": "string",
-                  "example": "ana@ana.com"
-                }
-              }
-            }
-          }
-        ],
-        "responses": {
-          "201": {
-            "description": "Operação Inserção bem sucedida"
           }
         }
       }
