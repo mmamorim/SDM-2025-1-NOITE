@@ -54,4 +54,6 @@ export default function auth(server, db) {
         //            res.json('usuário / senha inválidos!')
         //        }
     })
+
+    
 }

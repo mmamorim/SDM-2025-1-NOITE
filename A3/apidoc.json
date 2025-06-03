@@ -23,6 +23,43 @@
   },
   "Bearer": [],
   "paths": {
+    "/auth": {
+      "post": {
+        "tags": [
+          "AUTHORIZATION"
+        ],
+        "summary": "Autoriza e gera token",
+        "description": "Devolve um token válido",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "auth",
+            "description": "Objeto que descreve um autorização",
+            "schema": {
+              "type": "object",
+              "required": [
+                "senha", "email"
+              ],
+              "properties": {
+                "email": { "type": "string", "example": "ana@ana.com" },
+                "senha": { "type": "string", "example": "12345" }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Operação bem sucedida"
+          },
+          "400": {
+            "description": "Operação inválida"
+          }
+        }
+      }
+    },
     "/usuarios": {
       "get": {
         "tags": [

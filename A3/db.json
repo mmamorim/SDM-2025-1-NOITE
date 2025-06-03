@@ -49,5 +49,21 @@
       "data": "01/01/2000",
       "done": true
     }
+  },
+  "usuarios": {
+    "USER-hjcha": {
+      "id": "USER-hjcha",
+      "nome": "Ana",
+      "login": "ana",
+      "senha": "0c01398162c110e31c7ee5bfe7baca0b4c01040160c17e2f697932c382f1be78IbLlOVBpQINkl0T8CiHnSA==df0fc9cf1ba1eaee81c4f5c8e35358947baf82f5f83b28f545c9b2a9eaea7eb6",
+      "email": "ana@ana.com"
+    },
+    "USER-sHIEB": {
+      "id": "USER-sHIEB",
+      "nome": "Admininstrador",
+      "login": "admin",
+      "senha": "3708c29c1b063e1b80d3daf35833cd9190abeef43b2cfbb11c53019d481c1790sbLMzSFWLMoTsrenas4+3Q==4d0982fd9f045277db6cde21d4608f9f232deec3ced829b6eccd861d8927e83f",
+      "email": "admin@admin.com"
+    }
   }
 }
