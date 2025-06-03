@@ -1,7 +1,9 @@
 import express from 'express';
 import bodyParser from 'body-parser'
 import cors from "cors"
-import clapback from "@mmamorim/clapback"
+import db from "@mmamorim/clapback"
+import * as dotenv from 'dotenv'
+dotenv.config()
 
 const server = express();
 server.use(bodyParser.json());       // suporte para JSON-encoded bodies
@@ -11,7 +13,8 @@ server.use(bodyParser.urlencoded({     // suporte para URL-encoded bodies
 server.use(cors())
 
 const PORT = process.env.PORT || 3000;
+console.log("PORT",PORT);
 
-await clapback.init({ server, port: PORT, dbFileName: 'db.json' })
+await db.init({ server, port: PORT, dbFileName: 'db.json' })
 
-export { server, clapback, PORT }
+export { server, db, PORT }

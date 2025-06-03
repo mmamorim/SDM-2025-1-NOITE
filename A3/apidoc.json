@@ -11,6 +11,17 @@
     "http",
     "https"
   ],
+  "securityDefinitions": {
+    "api_key": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "security": {
+    "Bearer": []
+  },
+  "Bearer": [],
   "paths": {
     "/frutas": {
       "get": {
@@ -45,11 +56,18 @@
             "schema": {
               "type": "object",
               "required": [
-                "nome", "cor"
+                "nome",
+                "cor"
               ],
               "properties": {
-                "nome": { "type": "string", "example": "Banana" },
-                "cor": { "type": "string", "example": "vermelho" }
+                "nome": {
+                  "type": "string",
+                  "example": "Banana"
+                },
+                "cor": {
+                  "type": "string",
+                  "example": "vermelho"
+                }
               }
             }
           }
@@ -86,11 +104,18 @@
             "schema": {
               "type": "object",
               "required": [
-                "nome", "cor"
+                "nome",
+                "cor"
               ],
               "properties": {
-                "nome": { "type": "string", "example": "Banana" },
-                "cor": { "type": "string", "example": "vermelho" }
+                "nome": {
+                  "type": "string",
+                  "example": "Banana"
+                },
+                "cor": {
+                  "type": "string",
+                  "example": "vermelho"
+                }
               }
             }
           }
@@ -127,7 +152,7 @@
             "description": "FRUTA NÃO ENCONTRADA"
           }
         }
-      }      
+      }
     },
     "/filmes": {
       "get": {
@@ -162,12 +187,23 @@
             "schema": {
               "type": "object",
               "required": [
-                "nome", "ano", "duracao"
+                "nome",
+                "ano",
+                "duracao"
               ],
               "properties": {
-                "nome": { "type": "string", "example": "Banana" },
-                "ano": { "type": "number", "example": 2000 },
-                "duracao": { "type": "number", "example": 120 }
+                "nome": {
+                  "type": "string",
+                  "example": "Banana"
+                },
+                "ano": {
+                  "type": "number",
+                  "example": 2000
+                },
+                "duracao": {
+                  "type": "number",
+                  "example": 120
+                }
               }
             }
           }
@@ -204,11 +240,18 @@
             "schema": {
               "type": "object",
               "required": [
-                "nome", "cor"
+                "nome",
+                "cor"
               ],
               "properties": {
-                "nome": { "type": "string", "example": "Banana" },
-                "cor": { "type": "string", "example": "vermelho" }
+                "nome": {
+                  "type": "string",
+                  "example": "Banana"
+                },
+                "cor": {
+                  "type": "string",
+                  "example": "vermelho"
+                }
               }
             }
           }
@@ -245,10 +288,8 @@
             "description": "FRUTA NÃO ENCONTRADA"
           }
         }
-      }      
+      }
     },
-
-
     "/usuarios": {
       "get": {
         "tags": [
@@ -282,13 +323,28 @@
             "schema": {
               "type": "object",
               "required": [
-                "nome", "login", "senha", "email"
+                "nome",
+                "login",
+                "senha",
+                "email"
               ],
               "properties": {
-                "nome": { "type": "string", "example": "Ana" },
-                "login": { "type": "string", "example": "ana" },
-                "senha": { "type": "string", "example": "12345" },
-                "email": { "type": "string", "example": "ana@ana.com" }
+                "nome": {
+                  "type": "string",
+                  "example": "Ana"
+                },
+                "login": {
+                  "type": "string",
+                  "example": "ana"
+                },
+                "senha": {
+                  "type": "string",
+                  "example": "12345"
+                },
+                "email": {
+                  "type": "string",
+                  "example": "ana@ana.com"
+                }
               }
             }
           }
@@ -333,12 +389,22 @@
             "schema": {
               "type": "object",
               "required": [
-                "nome", "cor"
+                "nome",
+                "cor"
               ],
               "properties": {
-                "nome": { "type": "string", "example": "Banana" },
-                "data": { "type": "string", "example": "01/01/2000" },
-                "done": { "type": "boolean", "example": true }
+                "nome": {
+                  "type": "string",
+                  "example": "Banana"
+                },
+                "data": {
+                  "type": "string",
+                  "example": "01/01/2000"
+                },
+                "done": {
+                  "type": "boolean",
+                  "example": true
+                }
               }
             }
           }
@@ -375,12 +441,23 @@
             "schema": {
               "type": "object",
               "required": [
-                "nome", "data", "done"
+                "nome",
+                "data",
+                "done"
               ],
               "properties": {
-                "nome": { "type": "string", "example": "Banana" },
-                "data": { "type": "string", "example": "01/01/2000" },
-                "done": { "type": "boolean", "example": true }
+                "nome": {
+                  "type": "string",
+                  "example": "Banana"
+                },
+                "data": {
+                  "type": "string",
+                  "example": "01/01/2000"
+                },
+                "done": {
+                  "type": "boolean",
+                  "example": true
+                }
               }
             }
           }
@@ -417,7 +494,7 @@
             "description": "FRUTA NÃO ENCONTRADA"
           }
         }
-      }      
+      }
     }
   }
 }
