@@ -1,7 +1,7 @@
 
-export default function rotasFrutas(server, db) {
+export default function rotasFrutas(server, db, auth) {
 
-    server.get('/frutas', (req, res) => {
+    server.get('/frutas', auth.middlewareAuth, (req, res) => {
         let frutas = db.get("/frutas")
         res.status(200).json(frutas)
     });

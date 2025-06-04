@@ -9,9 +9,9 @@ server.get('/', (req, res) => {
     res.send('🙋‍♂️ Hello...route /');
 });
 
-auth(server,db)
+auth.init(server,db)
 rotasUsuarios(server,db)
-rotasFrutas(server,db)
+rotasFrutas(server, db, auth)
 rotasTarefas(server,db)
 rotasFilmes(server,db)
 
